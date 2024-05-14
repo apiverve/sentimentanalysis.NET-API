@@ -1,21 +1,42 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
+using Newtonsoft.Json;
 
 namespace APIVerve
 {
-    using Newtonsoft.Json;
+public class calculation
+{
+    [JsonProperty("excited")]
+    public int excited { get; set; }
+
+}
+
+public class data
+{
+    [JsonProperty("comparative")]
+    public double comparative { get; set; }
+
+    [JsonProperty("calculation")]
+    public calculation[] calculation { get; set; }
+
+    [JsonProperty("sentimentText")]
+    public string sentimentText { get; set; }
+
+    [JsonProperty("sentiment")]
+    public int sentiment { get; set; }
+
+}
 
 public class ResponseObj
 {
     [JsonProperty("status")]
-    public string Status { get; set; }
+    public string status { get; set; }
 
     [JsonProperty("error")]
-    public string Error { get; set; }
+    public object error { get; set; }
 
     [JsonProperty("data")]
-    public object Data { get; set; }
+    public data data { get; set; }
 
 }
 
