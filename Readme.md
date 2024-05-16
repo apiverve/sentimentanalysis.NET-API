@@ -71,7 +71,7 @@ Using the API client, you can perform requests to the API.
 
 ```
 var queryOptions = new sentimentanalysisQueryOptions{
-  "text": "I'm so excited that tomorrow is going to be sunny! Can't wait!"
+  text: "I'm so excited that tomorrow is going to be sunny! Can't wait!"
 };
 ```
 
