@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new sentimentanalysisQueryOptions {
+var queryOptions = new SentimentAnalysisQueryOptions {
   text = "I'm so excited that tomorrow is going to be sunny! Can't wait!"
 };
 ```
@@ -102,7 +102,8 @@ if(response.error != null) {
     ],
     "sentimentText": "positive",
     "sentiment": 3
-  }
+  },
+  "code": 200
 }
 ```
 
