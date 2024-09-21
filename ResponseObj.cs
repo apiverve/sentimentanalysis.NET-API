@@ -4,20 +4,10 @@ using Newtonsoft.Json;
 
 namespace APIVerve
 {
-public class calculation
-{
-    [JsonProperty("excited")]
-    public int excited { get; set; }
-
-}
-
 public class data
 {
     [JsonProperty("comparative")]
     public double comparative { get; set; }
-
-    [JsonProperty("calculation")]
-    public calculation[] calculation { get; set; }
 
     [JsonProperty("sentimentText")]
     public string sentimentText { get; set; }
