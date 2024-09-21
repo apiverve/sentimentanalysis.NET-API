@@ -95,11 +95,6 @@ if(response.error != null) {
   "error": null,
   "data": {
     "comparative": 0.25,
-    "calculation": [
-      {
-        "excited": 3
-      }
-    ],
     "sentimentText": "positive",
     "sentiment": 3
   },
